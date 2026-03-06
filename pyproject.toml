@@ -1,0 +1,55 @@
+[project]
+name = "cryptofolio"
+description = "Simple desktop cryptocurrency portfolio tracker using CoinGecko API and PyQt5"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "mythaneee", email = "masterawesomevg@gmail.com"}]
+keywords = ["crypto", "portfolio", "tracker", "coingecko", "pyqt5"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+dependencies = [
+    "requests >= 2.31",
+    "PyQt5 >= 5.15.9",
+    "matplotlib >= 3.8",
+    "structlog >= 24.1",
+    "pydantic-settings >= 2.3",
+]
+
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "ruff >= 0.4",
+    "mypy >= 1.10",
+    "pytest >= 8.2",
+    "pre-commit >= 3.7",
+]
+
+[project.scripts]
+cryptofolio = "cryptofolio.__main__:run"
+
+[project.urls]
+Homepage = "https://github.com/mythaneee/crypto-portfolio-manager"
+"Bug Tracker" = "https://github.com/mythaneee/crypto-portfolio-manager/issues"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cryptofolio"]
