@@ -1,0 +1,36 @@
+{
+  "holdings": {
+    "bitcoin": {
+      "name": "Unknown",
+      "symbol": "BITCOIN",
+      "amount": 1.0,
+      "change_24h": -2.87,
+      "current_price": 70889.0,
+      "value_usd": 70889.0
+    },
+    "ethereum": {
+      "name": "Unknown",
+      "symbol": "ETHEREUM",
+      "amount": 1.0,
+      "change_24h": -3.88,
+      "current_price": 2060.59,
+      "value_usd": 2060.59
+    },
+    "doge": {
+      "name": "Unknown",
+      "symbol": "DOGE",
+      "amount": 1.0,
+      "change_24h": -5.49,
+      "current_price": 0.0,
+      "value_usd": 0.0
+    },
+    "litecoin": {
+      "name": "Unknown",
+      "symbol": "LITECOIN",
+      "amount": 1.0,
+      "change_24h": -2.54,
+      "current_price": 55.26,
+      "value_usd": 55.26
+    }
+  }
+}
