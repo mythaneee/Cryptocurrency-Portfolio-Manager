@@ -16,7 +16,7 @@ Simple, offline-first desktop application to track your cryptocurrency holdings 
 
 ```bash
 # Recommended: use uv / pipx / pip
-git clone https://github.com/YOUR_USERNAME/crypto-portfolio-manager.git
+git clone https://github.com/mythaneee/crypto-portfolio-manager.git
 cd crypto-portfolio-manager
 
 # Install dependencies
@@ -25,4 +25,5 @@ pip install -r requirements.txt
 # Run
 python -m cryptofolio
 # or after pip install -e .
+
 cryptofolio
