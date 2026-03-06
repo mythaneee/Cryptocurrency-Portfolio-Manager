@@ -97,3 +97,4 @@ class PortfolioView(QMainWindow):
       self.figure.tight_layout(pad=1.0)
       self.canvas.draw_idle()
 
+
